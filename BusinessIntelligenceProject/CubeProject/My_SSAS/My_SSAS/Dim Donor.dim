@@ -1,0 +1,315 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8db2e55b-326a-47a9-85c1-eada769145eb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Donor</ID>
+  <Name>Dim Donor</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1303" scrolltop="-2328" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6033" y="9975" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimDonor" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3387" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c00003b0d000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimDonor" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1303</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2328</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="9bad86e4-f5a6-4e93-8f2a-b38e1539c9fc">
+    <DataSourceViewID>DSV_DataWareHouseProject_My</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="40076ba5-1e62-4c0b-93de-d9cc2974abaa">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="964712a4-b116-4a96-a2eb-b10a51f7b43b">
+      <ID>Donor SK</ID>
+      <Name>Donor SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d0a5b771-4223-40ae-a5b0-8409cc4dd493">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="26be50f2-b443-44ea-b187-a53ef43c3927">
+            <TableID>dbo_DimDonor</TableID>
+            <ColumnID>DonorSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="30c7e9f7-fe6e-4cec-a71d-381f54000a31">
+          <AttributeID>Donor Alternate ID</AttributeID>
+          <Name>Donor Alternate ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b7a2c7ab-214b-41d8-9539-41f75a7d6713">
+          <AttributeID>Donor Is Teacher</AttributeID>
+          <Name>Donor Is Teacher</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ff82b1d-0b79-4855-a3d8-32bc8df2ffc0">
+          <AttributeID>Donorname</AttributeID>
+          <Name>Donorname</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5b9f8522-6a3e-46dd-88b9-6e835117f548">
+          <AttributeID>Donor City</AttributeID>
+          <Name>Donor City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="02a7cadd-f66a-4770-bbc9-262b84e41dd7">
+          <AttributeID>Donor State</AttributeID>
+          <Name>Donor State</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f7e71d35-0671-4848-865e-388f5fcbce73">
+          <AttributeID>Donor Zip</AttributeID>
+          <Name>Donor Zip</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="16bffea9-f2ef-467a-8ac3-7a9d90e05804">
+          <AttributeID>Startdate</AttributeID>
+          <Name>Startdate</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="734f6043-2c35-4ec4-88e3-085e6323572c">
+          <AttributeID>Enddate</AttributeID>
+          <Name>Enddate</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="33374c3f-3e3f-4da0-8686-fa6cdb41ef54">
+          <AttributeID>Insert Date</AttributeID>
+          <Name>Insert Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3c4bf8fc-c4f7-4a01-b706-bbfcfeb2865f">
+          <AttributeID>Modified Date</AttributeID>
+          <Name>Modified Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c252e794-6bf7-4c44-a741-fbb0698b29ad">
+      <ID>Donor Alternate ID</ID>
+      <Name>Donor Alternate ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="23025a23-636f-4186-a866-25c51ced41cd">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a1e5b9c-b2f8-4fea-bdb0-404f0a3e68a3">
+            <TableID>dbo_DimDonor</TableID>
+            <ColumnID>DonorAlternateID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ef3b5660-e790-4e38-8896-614a21c09f63">
+      <ID>Donor Is Teacher</ID>
+      <Name>Donor Is Teacher</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ce8e2bf7-70d2-4630-9924-96f88864b227">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ecac2924-c6e8-4c3c-8b63-c5481f43b004">
+            <TableID>dbo_DimDonor</TableID>
+            <ColumnID>DonorIsTeacher</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="62b3d34f-58d0-4bf1-addf-66747641360e">
+      <ID>Donorname</ID>
+      <Name>Donorname</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3553229b-6254-4626-999a-90cec0368e10">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3d772841-6387-41df-9515-93ac5e568fa2">
+            <TableID>dbo_DimDonor</TableID>
+            <ColumnID>Donorname</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c8807e68-30fa-4891-8344-b221f03615e7">
+      <ID>Donor City</ID>
+      <Name>Donor City</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="030e34cf-d37c-4c01-8cc5-0cc1a43dce63">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c6e58c37-8e19-47d4-8f44-0a5489438387">
+            <TableID>dbo_DimDonor</TableID>
+            <ColumnID>DonorCity</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f83dedcf-e59c-4dff-bdf7-746313dd07d0">
+      <ID>Donor State</ID>
+      <Name>Donor State</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bec20886-a000-4cbb-8746-93b496328cdc">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e3875d6-b4c4-4727-9c2f-6294826b9f0a">
+            <TableID>dbo_DimDonor</TableID>
+            <ColumnID>DonorState</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fa0c43c9-ceef-441a-a507-91be0660d1f9">
+      <ID>Donor Zip</ID>
+      <Name>Donor Zip</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ef5b508a-bb49-4836-82b9-85ce957fee55">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="46ee2197-ae0b-4be1-a55b-0ffaac38cca6">
+            <TableID>dbo_DimDonor</TableID>
+            <ColumnID>DonorZip</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1dd1a79b-b5ec-43e6-8624-33c1d0fb17ed">
+      <ID>Startdate</ID>
+      <Name>Startdate</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0a25b737-ab48-4b5f-b8f1-118c236b26bc">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6055963-ba41-429a-9b1b-a0a36604997b">
+            <TableID>dbo_DimDonor</TableID>
+            <ColumnID>Startdate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7aad4ea9-4ff0-44b5-bf2c-e5312777a136">
+      <ID>Enddate</ID>
+      <Name>Enddate</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1ccf5f75-a78e-4ffa-a1b4-476db4d4b92b">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1cc9b9f0-4d6a-493e-b6a0-b8de03579641">
+            <TableID>dbo_DimDonor</TableID>
+            <ColumnID>Enddate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1986a7f0-0513-40ed-a811-077dfafa0180">
+      <ID>Insert Date</ID>
+      <Name>Insert Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="97673ab4-3ae1-4cb6-9e9b-8b818d791374">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="069b4d1b-abec-4d68-8731-c7667ef625e4">
+            <TableID>dbo_DimDonor</TableID>
+            <ColumnID>InsertDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="aac0d1fa-61d2-4422-8069-e7ac014d694e">
+      <ID>Modified Date</ID>
+      <Name>Modified Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aeb4442f-9f6f-4faa-ac17-2f6ab985bf0d">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="53b11e0b-22b5-4b91-9e56-2d6f3d6d25c1">
+            <TableID>dbo_DimDonor</TableID>
+            <ColumnID>ModifiedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="6a3c9ed4-1b20-4d50-b428-7ae9ef84d4ad">
+      <ID>Hierarchy</ID>
+      <Name>DonorAdressHierachy</Name>
+      <Levels>
+        <Level dwd:design-time-name="b1ca9b49-2894-4e61-b16e-0a1f16b822dc">
+          <ID>Donor State</ID>
+          <Name>Donor State</Name>
+          <SourceAttributeID>Donor State</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="91b13e44-a2ec-42d2-bf23-c7a3c11d8d53">
+          <ID>Donor City</ID>
+          <Name>Donor City</Name>
+          <SourceAttributeID>Donor City</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
